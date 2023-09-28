@@ -6,8 +6,9 @@ import "@fontsource/roboto/700.css";
 import { Grid, Stack, Typography } from "@mui/material";
 import "../styles/theme";
 import { colors, fontSizes } from "../styles/theme";
-import Header from "./components/header";
 import Sobre from "./components/Sobre";
+import Experiencia from "./components/Experiencia";
+import Header from "./components/Header";
 
 export default function Home() {
   return (
@@ -75,6 +76,18 @@ export default function Home() {
       >
         <Grid mt={10} container>
           <Sobre />
+        </Grid>
+      </Stack>
+      <Stack
+        sx={{
+          backgroundColor: colors.fundo,
+          width: "100%",
+          height: "100vh",
+          alignItems: "center",
+        }}
+      >
+        <Grid container>
+          <Experiencia />
         </Grid>
       </Stack>
     </>

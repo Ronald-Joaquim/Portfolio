@@ -50,10 +50,11 @@ export default function Sobre() {
                 width: "35rem",
               }}
             >
-              Olá! Meu nome é Ronald e gosto de criar o que me vem na cabeça.
-              Meu interesse na programação começou em 2021, meu primeiro contato
-              com a programação foi em PHP!!! estranho né?! <br />
-              Hoje sou FrontEnd 😂😂
+              Olá! Meu nome é Ronald. Gosto de explorar minha criatividade e
+              recriar minhas ideias através da programação. Meu interesse na
+              área começou em 2021, meu primeiro "Hello world" foi no PHP...
+              Estranho, né?!
+              <br /> Hoje sou FrontEnd. 😂😂
             </Typography>
           </Grid>
           <Grid item md={12} mt={1}>
@@ -64,9 +65,9 @@ export default function Sobre() {
                 width: "35rem",
               }}
             >
-              atualmente estou focado nos estudos de React, para que em um
-              futuro muito próximo, eu comece a estudar mais a fundo sobre o
-              backEnd e me tornando um desenvolvedor FullStack!
+              Atualmente estou focado nos estudos de React, para que em um
+              futuro muito próximo, eu possa estudar e me aprofundar em backEnd
+              e me tornar um desenvolvedor FullStack!
             </Typography>
           </Grid>
         </Grid>
