@@ -57,28 +57,30 @@ export default function Experiencia() {
       alignItems={"center"}
       justifyContent={"center"}
     >
-      <Grid item md={12} display={"flex"} alignItems={"center"} sx={{ gap: 1 }}>
+      <Grid item md={6} display={"flex"} alignItems={"center"} sx={{ gap: 1 }}>
         <Grid container>
           <Grid md={12} display={"flex"} alignItems={"center"} sx={{ gap: 1 }}>
-            <Typography
-              sx={{
-                color: colors.subtitulos,
-                fontSize: fontSizes["4xl"],
-                fontWeight: 700,
-              }}
-            >
-              02.
-            </Typography>
-            <Typography
-              sx={{
-                color: colors.titulos,
-                fontSize: fontSizes["4xl"],
-                fontWeight: 700,
-              }}
-            >
-              EXPERIÊNCIA DE TRABALHO
-            </Typography>
-            <Grid item md={4.7}>
+            <Grid item md={7} display={"flex"} sx={{ gap: 1 }}>
+              <Typography
+                sx={{
+                  color: colors.subtitulos,
+                  fontSize: fontSizes["4xl"],
+                  fontWeight: 700,
+                }}
+              >
+                02.
+              </Typography>
+              <Typography
+                sx={{
+                  color: colors.titulos,
+                  fontSize: fontSizes["4xl"],
+                  fontWeight: 700,
+                }}
+              >
+                EXPERIÊNCIA DE TRABALHO
+              </Typography>
+            </Grid>
+            <Grid item md={5.5}>
               <Divider sx={{ background: colors.subtitulos, height: "2px" }} />
             </Grid>
           </Grid>
@@ -96,7 +98,11 @@ export default function Experiencia() {
                 value={value}
                 onChange={handleChange}
                 aria-label="Vertical tabs example"
-                sx={{ borderRight: 1, borderColor: "divider" }}
+                sx={{
+                  borderRight: 1,
+                  borderColor: "divider",
+                  minWidth: "120px",
+                }}
               >
                 <Tab
                   label="Alumisoft"
@@ -107,7 +113,7 @@ export default function Experiencia() {
                       color: colors.subtitulos,
                     },
                     fontSize: fontSizes.lg,
-                    fontWeight: 700,
+                    fontWeight: 600,
                   }}
                 />
                 <Tab
@@ -119,13 +125,18 @@ export default function Experiencia() {
                       color: colors.subtitulos,
                     },
                     fontSize: fontSizes.lg,
-                    fontWeight: 700,
+                    fontWeight: 600,
                   }}
                 />
               </StyledTabs>
               <TabPanel value={value} index={0}>
                 <Typography
-                  sx={{ fontSize: fontSizes["2xl"], color: colors.titulos }}
+                  sx={{
+                    fontSize: fontSizes["2xl"],
+                    color: colors.titulos,
+                    width: "100%",
+                    paddingLeft: "10px",
+                  }}
                 >
                   Com vasta experiência como desenvolvedor FrontEnd, sou
                   especializado em criar interfaces responsivas e modernas
@@ -147,7 +158,35 @@ export default function Experiencia() {
                 </Typography>
               </TabPanel>
               <TabPanel value={value} index={1}>
-                ALUMISOFT
+                <Typography
+                  sx={{
+                    fontSize: fontSizes["2xl"],
+                    color: colors.titulos,
+                    width: "100%",
+                    paddingLeft: "10px",
+                  }}
+                >
+                  Como freelancer, acumulei experiência valiosa trabalhando em
+                  uma variedade de projetos no campo do desenvolvimento web.
+                  <br />
+                  <br /> Nos meus trabalhos anteriores, tive a oportunidade de
+                  colaborar com clientes e implementar recursos de pagamento
+                  utilizando a plataforma Stripe.
+                  <br />
+                  <br /> Além disso, desenvolvi projetos empregando MUI React,
+                  uma biblioteca popular de componentes de interface para criar
+                  interfaces atraentes e responsivas.
+                  <br />
+                  <br /> Também me especializei em criar websites responsivos,
+                  garantindo que as páginas se adaptem a diferentes dispositivos
+                  e tamanhos de tela.
+                  <br />
+                  <br />
+                  Minhas experiências como freelancer me proporcionaram
+                  conhecimento prático na aplicação dessas tecnologias e
+                  habilidades para entregar soluções sob medida aos meus
+                  clientes.
+                </Typography>
               </TabPanel>
             </Box>
           </Grid>
@@ -168,7 +207,7 @@ const StyledTabs = styled((props: StyledTabsProps) => (
     display: "flex",
   },
   "& .MuiTabs-indicatorSpan": {
-    maxWidth: 40,
+    maxWidth: 100,
     width: "100%",
     backgroundColor: "#4B0082",
   },
