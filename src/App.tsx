@@ -10,6 +10,7 @@ import Sobre from "./components/Sobre";
 import Experiencia from "./components/Experiencia";
 import Header from "./components/Header";
 import Projetos from "./components/Projetos";
+import Contato from "./components/Contanto";
 
 export default function Home() {
   return (
@@ -101,6 +102,18 @@ export default function Home() {
       >
         <Grid container>
           <Projetos />
+        </Grid>
+      </Stack>
+      <Stack
+        sx={{
+          backgroundColor: colors.fundo,
+          width: "100%",
+          height: "100vh",
+          alignItems: "center",
+        }}
+      >
+        <Grid container>
+          <Contato />
         </Grid>
       </Stack>
     </>

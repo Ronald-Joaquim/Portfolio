@@ -13,7 +13,7 @@ export default function Projetos() {
       alignItems={"center"}
       justifyContent={"center"}
     >
-      <Grid item md={6} display={"flex"} alignItems={"center"} sx={{ gap: 1 }}>
+      <Grid item md={6}>
         <Grid container>
           <Grid md={12} display={"flex"} alignItems={"center"} sx={{ gap: 1 }}>
             <Grid item md={3} display={"flex"} sx={{ gap: 1 }}>
@@ -58,7 +58,7 @@ export default function Projetos() {
                 <Grid md={12} sx={{ height: "40px" }}>
                   <Typography
                     sx={{
-                      color: colors.titulos,
+                      color: colors.subtitulos,
                       fontSize: fontSizes.lg,
                       fontWeight: 700,
                       textAlign: "center",
@@ -71,7 +71,7 @@ export default function Projetos() {
                   <Container>
                     <Typography
                       sx={{
-                        color: colors.subtitulos,
+                        color: colors.titulos,
                         fontSize: fontSizes.md,
                         fontWeight: 600,
                       }}
@@ -96,7 +96,7 @@ export default function Projetos() {
                   >
                     <Typography
                       sx={{
-                        color: colors.titulos,
+                        color: colors.subtitulos,
                         fontSize: fontSizes.md,
                         fontWeight: 600,
                       }}
@@ -105,7 +105,7 @@ export default function Projetos() {
                     </Typography>
                     <Typography
                       sx={{
-                        color: colors.titulos,
+                        color: colors.subtitulos,
                         fontSize: fontSizes.md,
                         fontWeight: 600,
                       }}
@@ -114,7 +114,7 @@ export default function Projetos() {
                     </Typography>
                     <Typography
                       sx={{
-                        color: colors.titulos,
+                        color: colors.subtitulos,
                         fontSize: fontSizes.md,
                         fontWeight: 600,
                       }}
@@ -123,7 +123,7 @@ export default function Projetos() {
                     </Typography>
                     <Typography
                       sx={{
-                        color: colors.titulos,
+                        color: colors.subtitulos,
                         fontSize: fontSizes.md,
                         fontWeight: 600,
                       }}
@@ -159,7 +159,7 @@ export default function Projetos() {
                 <Grid md={12} sx={{ height: "40px" }}>
                   <Typography
                     sx={{
-                      color: colors.titulos,
+                      color: colors.subtitulos,
                       fontSize: fontSizes.lg,
                       fontWeight: 700,
                       textAlign: "center",
@@ -172,12 +172,12 @@ export default function Projetos() {
                   <Container>
                     <Typography
                       sx={{
-                        color: colors.subtitulos,
+                        color: colors.titulos,
                         fontSize: fontSizes.md,
                         fontWeight: 600,
                       }}
                     >
-                      Site pessoal para vendas de roupas online
+                      Site pessoal para vendas de vestimentas online
                     </Typography>
                   </Container>
                 </Grid>
@@ -197,7 +197,7 @@ export default function Projetos() {
                   >
                     <Typography
                       sx={{
-                        color: colors.titulos,
+                        color: colors.subtitulos,
                         fontSize: fontSizes.md,
                         fontWeight: 600,
                       }}
@@ -206,7 +206,7 @@ export default function Projetos() {
                     </Typography>
                     <Typography
                       sx={{
-                        color: colors.titulos,
+                        color: colors.subtitulos,
                         fontSize: fontSizes.md,
                         fontWeight: 600,
                       }}
@@ -215,7 +215,7 @@ export default function Projetos() {
                     </Typography>
                     <Typography
                       sx={{
-                        color: colors.titulos,
+                        color: colors.subtitulos,
                         fontSize: fontSizes.md,
                         fontWeight: 600,
                       }}
