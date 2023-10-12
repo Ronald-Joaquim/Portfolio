@@ -14,7 +14,7 @@ export default function Projetos() {
       justifyContent={"center"}
     >
       <Grid item md={6}>
-        <Grid container>
+        <Grid container id={"projetos"}>
           <Grid md={12} display={"flex"} alignItems={"center"} sx={{ gap: 1 }}>
             <Grid item md={3} display={"flex"} sx={{ gap: 1 }}>
               <Typography

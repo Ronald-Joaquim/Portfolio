@@ -13,7 +13,7 @@ interface TabPanelProps {
 interface StyledTabsProps {
   children?: React.ReactNode;
   value: number;
-  onChange: (event: React.SyntheticEvent, newValue: number) => void;
+  onChange: (event: SyntheticEvent, newValue: number) => void;
 }
 
 function TabPanel(props: TabPanelProps) {
@@ -58,7 +58,7 @@ export default function Experiencia() {
       justifyContent={"center"}
     >
       <Grid item md={6} display={"flex"} alignItems={"center"} sx={{ gap: 1 }}>
-        <Grid container>
+        <Grid container id={"experiencia"}>
           <Grid md={12} display={"flex"} alignItems={"center"} sx={{ gap: 1 }}>
             <Grid item md={7} display={"flex"} sx={{ gap: 1 }}>
               <Typography

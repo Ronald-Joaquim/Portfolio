@@ -13,7 +13,7 @@ export default function Sobre() {
       justifyContent={"center"}
     >
       <Grid item md={4} display={"flex"} alignItems={"center"} sx={{ gap: 1 }}>
-        <Grid container>
+        <Grid container id={"sobre"}>
           <Grid md={12} display={"flex"} alignItems={"center"} sx={{ gap: 1 }}>
             <Grid>
               <Typography

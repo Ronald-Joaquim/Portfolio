@@ -1,21 +1,29 @@
-import { Typography, Stack, Grid, Button } from "@mui/material";
+import { Typography, Grid, Button } from "@mui/material";
 import { colors, fontSizes } from "../../styles/theme";
+import AnchorLink from "react-anchor-link-smooth-scroll";
+import styled from "styled-components";
 
 export default function Header() {
   return (
-    <Stack sx={{ minWidth: "1280px" }} display={"flex"}>
-      <Grid container mt={2.5} justifyContent={"space-between"}>
-        <Grid item>
+    <Grid
+      container
+      justifyContent={"center"}
+      position={"fixed"}
+      sx={{ backdropFilter: "blur(10px)", padding: "10px" }}
+    >
+      <Grid item md={6} display={"flex"} alignItems={"center"}>
+        <Grid item md={2}>
           <Typography sx={{ color: colors.titulos, fontSize: fontSizes.lg }}>
             Logo
           </Typography>
         </Grid>
         <Grid
           item
+          md={10}
           display={"flex"}
           alignItems={"center"}
-          justifyContent={"space-around"}
-          sx={{ gap: 2.5 }}
+          justifyContent={"flex-end"}
+          sx={{ gap: 2.5, textDecoration: "none" }}
         >
           <Typography
             alignItems={"center"}
@@ -28,15 +36,18 @@ export default function Header() {
             }}
           >
             1.
-            <Typography
-              sx={{
-                color: colors.titulos,
-                fontSize: fontSizes.xl,
-                fontWeight: "600",
-              }}
-            >
-              SOBRE MIM
-            </Typography>
+            <AnchorCustom href="#sobre" offset={"300"}>
+              <Typography
+                sx={{
+                  color: colors.titulos,
+                  fontSize: fontSizes.xl,
+                  fontWeight: "600",
+                  textDecoration: "none",
+                }}
+              >
+                SOBRE MIM
+              </Typography>
+            </AnchorCustom>
           </Typography>
           <Typography
             alignItems={"center"}
@@ -49,15 +60,17 @@ export default function Header() {
             }}
           >
             2.
-            <Typography
-              sx={{
-                color: colors.titulos,
-                fontSize: fontSizes.xl,
-                fontWeight: "600",
-              }}
-            >
-              EXPERIÊNCIA
-            </Typography>
+            <AnchorCustom href="#experiencia" offset={"300"}>
+              <Typography
+                sx={{
+                  color: colors.titulos,
+                  fontSize: fontSizes.xl,
+                  fontWeight: "600",
+                }}
+              >
+                EXPERIÊNCIA
+              </Typography>
+            </AnchorCustom>
           </Typography>
           <Typography
             alignItems={"center"}
@@ -70,15 +83,17 @@ export default function Header() {
             }}
           >
             3.
-            <Typography
-              sx={{
-                color: colors.titulos,
-                fontSize: fontSizes.xl,
-                fontWeight: "600",
-              }}
-            >
-              PROJETOS
-            </Typography>
+            <AnchorCustom href="#projetos" offset={"50"}>
+              <Typography
+                sx={{
+                  color: colors.titulos,
+                  fontSize: fontSizes.xl,
+                  fontWeight: "600",
+                }}
+              >
+                PROJETOS
+              </Typography>
+            </AnchorCustom>
           </Typography>
           <Typography
             alignItems={"center"}
@@ -91,24 +106,33 @@ export default function Header() {
             }}
           >
             4.
-            <Typography
-              sx={{
-                color: colors.titulos,
-                fontSize: fontSizes.xl,
-                fontWeight: "600",
-              }}
-            >
-              CONTATO
-            </Typography>
+            <AnchorCustom href="#contato" offset={"300"}>
+              <Typography
+                sx={{
+                  color: colors.titulos,
+                  fontSize: fontSizes.xl,
+                  fontWeight: "600",
+                }}
+              >
+                CONTATO
+              </Typography>
+            </AnchorCustom>
           </Typography>
           <Button
             variant="contained"
-            sx={{ backgroundColor: colors.subtitulos, fontSize: fontSizes.md }}
+            sx={{
+              backgroundColor: colors.subtitulos,
+              fontSize: fontSizes.md,
+            }}
           >
             Resumo
           </Button>
         </Grid>
       </Grid>
-    </Stack>
+    </Grid>
   );
 }
+
+const AnchorCustom = styled(AnchorLink)`
+  text-decoration: none;
+`;
