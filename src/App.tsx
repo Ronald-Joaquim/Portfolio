@@ -31,20 +31,15 @@ export default function Home() {
           alignItems={"center"}
           justifyContent={"center"}
         >
-          <Grid item md={6}>
-            <Typography
-              sx={{ color: colors.subtitulos, fontSize: fontSizes["4xl"] }}
-            >
-              Saudações, meu nome é
-            </Typography>
+          <Grid item md={6} textAlign={"center"}>
             <Typography
               sx={{
-                color: colors.titulos,
-                fontSize: fontSizes["6xl"],
+                color: colors.subtitulos,
+                fontSize: fontSizes["4xl"],
                 fontWeight: 700,
               }}
             >
-              Ronald Joaquim Silveira.
+              Opa pessoal, tudo Joia?
             </Typography>
             <Typography
               sx={{
@@ -54,16 +49,15 @@ export default function Home() {
               }}
             >
               Sou um desenvolvedor web
-              <Typography
-                sx={{
-                  color: colors.titulos,
-                  fontSize: fontSizes["2xl"],
-                  width: "50%",
-                }}
-              >
-                No momento, estou dedicado a criar produtos acessíveis e
-                orientado ao usuário na Alumisoft
-              </Typography>
+            </Typography>
+            <Typography
+              sx={{
+                color: colors.titulos,
+                fontSize: fontSizes["2xl"],
+              }}
+            >
+              No momento, estou dedicado a criar produtos
+              <br /> acessíveis e orientado ao usuário na Alumisoft
             </Typography>
           </Grid>
         </Grid>

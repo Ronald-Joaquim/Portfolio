@@ -136,7 +136,6 @@ export default function Projetos() {
             </Grid>
             <Grid item md={5.5} mt={2}>
               <ImageContainer>
-                <Overlay />
                 <Image src={foto} alt="Descrição da imagem" />
               </ImageContainer>
             </Grid>
@@ -228,7 +227,6 @@ export default function Projetos() {
             </Grid>
             <Grid item md={5.5} mt={2}>
               <ImageContainer>
-                <Overlay />
                 <Image src={projeto} alt="Descrição da imagem" />
               </ImageContainer>
             </Grid>
@@ -277,28 +275,13 @@ const ButtonStyled = styled(Button)`
   }
 `;
 
-const ImageContainer = styled.div`
-  position: relative;
-  display: inline-block;
-`;
-
-const Overlay = styled.div`
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(75, 0, 130, 0.7);
-  transition: background-color 0.3s ease;
-  border-radius: 8px;
-
-  ${ImageContainer}:hover & {
-    background-color: transparent;
-  }
+const ImageContainer = styled.image`
+  display: flex;
 `;
 
 const Image = styled.img`
   display: block;
   width: 100%;
   height: auto;
+  cursor: pointer;
 `;

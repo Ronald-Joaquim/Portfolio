@@ -2,6 +2,7 @@ import { Typography, Grid, Button } from "@mui/material";
 import { colors, fontSizes } from "../../styles/theme";
 import AnchorLink from "react-anchor-link-smooth-scroll";
 import styled from "styled-components";
+import Typical from "react-typical";
 
 export default function Header() {
   return (
@@ -12,24 +13,41 @@ export default function Header() {
       sx={{ backdropFilter: "blur(10px)", padding: "10px" }}
     >
       <Grid item md={6} display={"flex"} alignItems={"center"}>
-        <Grid item md={2}>
-          <Typography sx={{ color: colors.titulos, fontSize: fontSizes.lg }}>
-            Logo
-          </Typography>
+        <Grid item md={3}>
+          <Nome
+            sx={{
+              color: colors.titulos,
+              fontSize: fontSizes.lg,
+              fontFamily: "Pixelify Sans",
+            }}
+          >
+            <Typical
+              steps={[
+                "RONALD",
+                1000,
+                "RONALD JOAQUIM",
+                1000,
+                "RONALD JOAQUIM SILVEIRA",
+                1000,
+              ]}
+              loop={Infinity}
+              wrapper="p"
+            />
+          </Nome>
         </Grid>
         <Grid
           item
-          md={10}
+          md={9}
           display={"flex"}
           alignItems={"center"}
           justifyContent={"flex-end"}
-          sx={{ gap: 2.5, textDecoration: "none" }}
+          sx={{ gap: 2, textDecoration: "none" }}
         >
           <Typography
             alignItems={"center"}
             sx={{
               color: colors.subtitulos,
-              fontSize: fontSizes["2xl"],
+              fontSize: fontSizes.xl,
               display: "flex",
               fontWeight: "900",
               gap: 0.5,
@@ -40,7 +58,7 @@ export default function Header() {
               <Typography
                 sx={{
                   color: colors.titulos,
-                  fontSize: fontSizes.xl,
+                  fontSize: fontSizes.lg,
                   fontWeight: "600",
                   textDecoration: "none",
                 }}
@@ -53,7 +71,7 @@ export default function Header() {
             alignItems={"center"}
             sx={{
               color: colors.subtitulos,
-              fontSize: fontSizes["2xl"],
+              fontSize: fontSizes.xl,
               display: "flex",
               fontWeight: "900",
               gap: 0.5,
@@ -64,7 +82,7 @@ export default function Header() {
               <Typography
                 sx={{
                   color: colors.titulos,
-                  fontSize: fontSizes.xl,
+                  fontSize: fontSizes.lg,
                   fontWeight: "600",
                 }}
               >
@@ -76,7 +94,7 @@ export default function Header() {
             alignItems={"center"}
             sx={{
               color: colors.subtitulos,
-              fontSize: fontSizes["2xl"],
+              fontSize: fontSizes.xl,
               display: "flex",
               fontWeight: "900",
               gap: 0.5,
@@ -87,7 +105,7 @@ export default function Header() {
               <Typography
                 sx={{
                   color: colors.titulos,
-                  fontSize: fontSizes.xl,
+                  fontSize: fontSizes.lg,
                   fontWeight: "600",
                 }}
               >
@@ -99,7 +117,7 @@ export default function Header() {
             alignItems={"center"}
             sx={{
               color: colors.subtitulos,
-              fontSize: fontSizes["2xl"],
+              fontSize: fontSizes.xl,
               display: "flex",
               fontWeight: "900",
               gap: 0.5,
@@ -110,7 +128,7 @@ export default function Header() {
               <Typography
                 sx={{
                   color: colors.titulos,
-                  fontSize: fontSizes.xl,
+                  fontSize: fontSizes.lg,
                   fontWeight: "600",
                 }}
               >
@@ -135,4 +153,8 @@ export default function Header() {
 
 const AnchorCustom = styled(AnchorLink)`
   text-decoration: none;
+`;
+
+const Nome = styled(Typography)`
+  text-shadow: 4px 3px 5px rgba(75, 0, 130, 1);
 `;
